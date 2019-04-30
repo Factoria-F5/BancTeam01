@@ -22,7 +22,7 @@
                 <td>{{$offer->location}}</td>
                 <td>{{$offer->agreementType}}</td>
                 <td>{{$offer->quantity}}</td>
-                <td>{{$offer->limitData}}</td>
+                <td>{{$offer->limitDate}}</td>
                 <td>{{$offer->beneficiary}}</td>
                 <td>{{$offer->companyOffer}}</td>
             </tr>
