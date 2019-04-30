@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/api/offers', 'OfferController@index');
+Route::resource('offer', 'OfferController');
+
