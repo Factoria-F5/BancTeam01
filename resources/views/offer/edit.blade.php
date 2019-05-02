@@ -15,7 +15,7 @@
         </div>
         <br /> 
         @endif
-        <form method="post" action="{{ route('offer.update', $contact->id) }}">
+        <form method="post" action="{{ route('offer.update', $offer->id) }}">
             @method('PATCH') 
             @csrf
             <div class="form-group"><label for="title">Title</label><input class="form-control" type="text" name="title"></div>
