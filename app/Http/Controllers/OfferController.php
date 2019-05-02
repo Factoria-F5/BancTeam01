@@ -67,9 +67,10 @@ class OfferController extends Controller
      * @param  \App\Offer  $offer
      * @return \Illuminate\Http\Response
      */
-    public function edit(Offer $offer)
+    public function edit($id)
     {
-        //
+        $offer = Offer::find($id);
+        return view('offer.edit', compact('offer'));
     }
 
     /**
@@ -81,7 +82,8 @@ class OfferController extends Controller
      */
     public function update(Request $request, Offer $offer)
     {
-        //
+        $offer->update($request->all());
+        return redirect('/offer')->with('success', 'Offer updated!');
     }
 
     /**
@@ -92,6 +94,7 @@ class OfferController extends Controller
      */
     public function destroy(Offer $offer)
     {
-        $piiiiimba='';
+        $offer->delete();
+        return redirect('/offer')->with('success', 'Contact deleted!');
     }
 }
