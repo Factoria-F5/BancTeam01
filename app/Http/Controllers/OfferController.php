@@ -82,6 +82,12 @@ class OfferController extends Controller
      */
     public function update(Request $request, Offer $offer)
     {
+        $request->validate([
+            'title'=>'required',
+            'description'=>'required',
+            'location'=>'required'
+        ]);
+        
         $offer->update($request->all());
         return redirect('/offer')->with('success', 'Offer updated!');
     }
