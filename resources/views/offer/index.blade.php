@@ -37,7 +37,7 @@
                 <td>{{$offer->location}}</td>
                 <td>{{$offer->agreementType}}</td>
                 <td>{{$offer->quantity}}</td>
-                <td>{{$offer->limitDate}}</td>
+                <td>{{$offer->limitDate->format('d/m/Y')}}</td>
                 <td>{{$offer->beneficiary}}</td>
                 <td>{{$offer->companyOffer}}</td>
                 <td>

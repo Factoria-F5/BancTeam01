@@ -24,7 +24,7 @@
     <div class="form-group"><label for="location">location</label><input class="form-control" type="text" name="location" value="{{ $offer->location }}"></div>
     <div class="form-group"><label for="agreementType">agreementType</label><input class="form-control" type="text" name="agreementType" value="{{ $offer->agreementType }}"></div>
     <div class="form-group"><label for="quantity">quantity</label><input class="form-control" type="number" name="quantity" value="{{ $offer->quantity }}"></div>
-    <div class="form-group"><label for="limitDate">limitDate</label><input class="form-control" type="date" name="limitDate" value="{{ $offer->limitDate }}"></div>
+    <div class="form-group"><label for="limitDate">limitDate</label><input class="form-control" type="date" name="limitDate" value="{{ $offer->getDateForInput() }}"></div>
     <div class="form-group"><label for="beneficiary">beneficiary</label><input class="form-control" type="text" name="beneficiary" value="{{ $offer->beneficiary }}"></div>
     <div class="form-group"><label for="companyOffer">companyOffer</label><input class="form-control" type="text" name="companyOffer" value="{{ $offer->companyOffer }}"></div>
             <button type="submit" class="btn btn-primary">Update</button>
