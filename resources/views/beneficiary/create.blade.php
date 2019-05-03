@@ -23,10 +23,10 @@
     @csrf
     <div class="form-group"><label for="name">Name</label><input class="form-control" type="text" name="name"></div>
     <div class="form-group"><label for="surname">Surname</label><input class="form-control" type="text" name="surname"></div>
-    <div class="form-group"><label for="dni">Dni</label><input class="form-control" type="text" name="dni"></div>
-    <div class="form-group"><label for="birthday">birthday</label><input class="form-control" type="text" name="birthday"></div>
-    <div class="form-group"><label for="adress">adress</label><input class="form-control" type="number" name="adress"></div>
-    <div class="form-group"><label for="phone">phone</label><input class="form-control" type="date" name="phone"></div>
+    <div class="form-group"><label for="dni">Dni</label><input class="form-control" type="char" name="dni"></div>
+    <div class="form-group"><label for="birthday">birthday</label><input class="form-control" type="date" name="birthday"></div>
+    <div class="form-group"><label for="adress">adress</label><input class="form-control" type="text" name="adress"></div>
+    <div class="form-group"><label for="phone">phone</label><input class="form-control" type="integer" name="phone"></div>
     <div class="form-group"><label for="email">email</label><input class="form-control" type="text" name="email"></div>
     <button type="submit" class="btn btn-primary-outline">Add beneficiary</button>
     </form>

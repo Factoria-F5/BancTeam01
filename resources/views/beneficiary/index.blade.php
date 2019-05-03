@@ -29,7 +29,7 @@
                 @endif
               </div>
         <tbody>
-        @foreach($benefeciaries as $beneficiary)
+        @foreach($beneficiaries as $beneficiary)
             <tr>
                 <td>{{$beneficiary->name}}</td>
                 <td>{{$beneficiary->surname}}</td>
