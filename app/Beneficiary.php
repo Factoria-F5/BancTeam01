@@ -16,4 +16,11 @@ class Beneficiary extends Model
             'phone',
             'email'
     ];
+    protected $dates =[
+        'birthday'
+    ];
+
+    public function getDateForInput(){
+        return $this->limitDate->format('Y-m-d');
+    }
 }
