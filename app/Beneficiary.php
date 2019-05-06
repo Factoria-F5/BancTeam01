@@ -21,6 +21,6 @@ class Beneficiary extends Model
     ];
 
     public function getDateForInput(){
-        return $this->limitDate->format('Y-m-d');
+        return $this->birthday->format('Y-m-d');
     }
 }

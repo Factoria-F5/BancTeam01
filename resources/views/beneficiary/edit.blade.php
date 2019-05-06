@@ -15,10 +15,10 @@
         </div>
         <br /> 
         @endif
-        <form method="post" action="{{ route('beneficiary.update', $offer->id) }}">
+        <form method="post" action="{{ route('beneficiary.update', $beneficiary->id) }}">
             @method('PATCH') 
             @csrf
-    <div class="form-group"><label for="name">Name</label><input class="form-control" type="text" name="name" value="{{ $beneficiary->title }}"></div>
+    <div class="form-group"><label for="name">Name</label><input class="form-control" type="text" name="name" value="{{ $beneficiary->name }}"></div>
     <div class="form-group"><label for="surname">Surname</label><input class="form-control" type="text" name="surname" value="{{ $beneficiary->surname }}"></div>
     <div class="form-group"><label for="dni">Dni</label><input class="form-control" type="char" name="dni" value="{{ $beneficiary->dni }}"></div>
     <div class="form-group"><label for="birthday">Birthday</label><input class="form-control" type="date" name="birthday" value="{{ $beneficiary->getDateForInput() }}"></div>

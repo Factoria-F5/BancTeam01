@@ -34,7 +34,7 @@
                 <td>{{$beneficiary->name}}</td>
                 <td>{{$beneficiary->surname}}</td>
                 <td>{{$beneficiary->dni}}</td>
-                <td>{{$beneficiary->format('d/m/Y')}}</td>
+                <td>{{$beneficiary->birthday->format('d/m/Y')}}</td>
                 <td>{{$beneficiary->adress}}</td>
                 <td>{{$beneficiary->phone}}</td>
                 <td>{{$beneficiary->email}}</td>
