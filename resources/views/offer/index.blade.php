@@ -3,7 +3,7 @@
 @section('main')
 <div class="row">
     <div class="col-sm-12">
-        <h1 class="display-3">Ofertes</h1>
+        <h1 class="display-3 mgtop">Ofertes</h1>
         <div>
             <a style="margin: 19px;" href="{{ route('offer.create')}}" class="btn btn-primary">Nova oferta</a>
         </div>     

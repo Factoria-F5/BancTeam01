@@ -3,7 +3,7 @@
 @section('main')
 <div class="row">
     <div class="col-sm-8 offset-sm-2">
-        <h1 class="display-3">Editar una oferta</h1>
+        <h1 class="display-3 mgtop">Editar una oferta</h1>
 
         @if ($errors->any())
         <div class="alert alert-danger">

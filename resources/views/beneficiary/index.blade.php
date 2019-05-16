@@ -3,7 +3,7 @@
 @section('main')
 <div class="row">
     <div class="col-sm-12">
-        <h1 class="display-3">Candidats</h1>
+        <h1 class="display-3 mgtop">Candidats</h1>
         <div>
             <a style="margin: 19px;" href="{{ route('beneficiary.create')}}" class="btn btn-primary">Nou candidat</a>
         </div>     

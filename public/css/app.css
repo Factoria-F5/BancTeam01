@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+.logo {
+    margin-right: 50px;
+}
+.mgtop {
+    margin-top: 100px;
+}
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)

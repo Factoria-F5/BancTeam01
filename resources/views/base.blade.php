@@ -8,9 +8,14 @@
     <link href="{{ asset('css/app.css' )}}" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="container">
-        <span><img src="http://www.amigaett.org/wp-content/themes/amiga_ett/lib/img/amiga_ett_social2.png" class="float-right" alt="logo"></span>
+    <div class="container-fluid">
+        <div class="logo">
+        <span><img src="http://www.amigaett.org/wp-content/themes/amiga_ett/lib/img/amiga_ett_social2.png" class="float-left" alt="logo"></span>
+        </div>
+        
         @yield('main')
+        
+        
     </div>
     <script src="{{ asset('js/app.js') }}" type="text/js"></script>
     
