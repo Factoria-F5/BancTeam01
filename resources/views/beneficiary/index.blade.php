@@ -3,21 +3,21 @@
 @section('main')
 <div class="row">
     <div class="col-sm-12">
-        <h1 class="display-3">Beneficiaries</h1>
+        <h1 class="display-3">Candidats</h1>
         <div>
-            <a style="margin: 19px;" href="{{ route('beneficiary.create')}}" class="btn btn-primary">New beneficiary</a>
+            <a style="margin: 19px;" href="{{ route('beneficiary.create')}}" class="btn btn-primary">Nou candidat</a>
         </div>     
       <table class="table table-striped">
         <thead>
             <tr>
-                <td>name</td>
-                <td>surname</td>
-                <td>dni</td>
-                <td>birthday</td>
-                <td>adress</td>
-                <td>phone</td>
-                <td>email</td>
-                <td colspan = 2>Actions</td>
+                <td>Nom</td>
+                <td>Cognoms</td>
+                <td>DNI</td>
+                <td>Aniversari</td>
+                <td>Adreça</td>
+                <td>Telèfon</td>
+                <td>Email</td>
+                <td colspan = 2>Accions</td>
             </tr>
         </thead>
         <div class="col-sm-12">
@@ -39,13 +39,13 @@
                 <td>{{$beneficiary->phone}}</td>
                 <td>{{$beneficiary->email}}</td>
                 <td>
-                    <a href="{{ route('beneficiary.edit',$beneficiary->id)}}" class="btn btn-primary">Edit</a>
+                    <a href="{{ route('beneficiary.edit',$beneficiary->id)}}" class="btn btn-primary">Editar</a>
                 </td>
                 <td>
                     <form action="{{ route('beneficiary.destroy', $beneficiary->id)}}" method="post">
                       @csrf
                       @method('DELETE')
-                      <button class="btn btn-danger" type="submit">Delete</button>
+                      <button class="btn btn-danger" type="submit">Esborrar</button>
                     </form>
                 </td>
             </tr>
