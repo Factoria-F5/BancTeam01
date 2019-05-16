@@ -21,7 +21,7 @@ class CreateOffersTable extends Migration
             $table->text('location');
             $table->text('agreementType');
             $table->integer('quantity');
-            $table->date('limitData');
+            $table->date('limitDate');
             $table->text('beneficiary');
             $table->text('companyOffer');
         });

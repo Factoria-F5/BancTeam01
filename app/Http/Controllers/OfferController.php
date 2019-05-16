@@ -14,7 +14,8 @@ class OfferController extends Controller
      */
     public function index()
     {
-        //
+        $offers=Offer::all();
+        return view('offer.index',compact('offers'));
     }
 
     /**
@@ -24,7 +25,7 @@ class OfferController extends Controller
      */
     public function create()
     {
-        //
+        return view('offer.create');
     }
 
     /**
@@ -35,7 +36,18 @@ class OfferController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $offer=new Offer([
+            'title'=>$request->get('title'),
+            'description'=>$request->get('description'),
+            'location'=>$request->get('location'),
+            'agreementType'=>$request->get('agreementType'),
+            'quantity'=>$request->get('quantity'),
+            'limitDate'=>$request->get('limitDate'),
+            'beneficiary'=>$request->get('beneficiary'),
+            'companyOffer'=>$request->get('companyOffer'),
+        ]);
+        $offer->save();
+        return redirect('/offer')->with('success','Offer saved!');
     }
 
     /**
@@ -55,9 +67,10 @@ class OfferController extends Controller
      * @param  \App\Offer  $offer
      * @return \Illuminate\Http\Response
      */
-    public function edit(Offer $offer)
+    public function edit($id)
     {
-        //
+        $offer = Offer::find($id);
+        return view('offer.edit', compact('offer'));
     }
 
     /**
@@ -69,7 +82,14 @@ class OfferController extends Controller
      */
     public function update(Request $request, Offer $offer)
     {
-        //
+        $request->validate([
+            'title'=>'required',
+            'description'=>'required',
+            'location'=>'required'
+        ]);
+        
+        $offer->update($request->all());
+        return redirect('/offer')->with('success', 'Offer updated!');
     }
 
     /**
@@ -80,6 +100,7 @@ class OfferController extends Controller
      */
     public function destroy(Offer $offer)
     {
-        //
+        $offer->delete();
+        return redirect('/offer')->with('success', 'Contact deleted!');
     }
 }

@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('offer', 'OfferController');
+Route::resource('beneficiary', 'BeneficiaryController');
