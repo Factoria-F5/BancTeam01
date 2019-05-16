@@ -14,7 +14,11 @@
                 <td>Empresa</td>
                 <td>Descripció</td>
                 <td>Lloc</td>
+<<<<<<< HEAD
                 <td>Tipo de Convenio</td>
+=======
+                <td>Tipus de conveni</td>
+>>>>>>> traducción
                 <td>Quantitat d'operaris</td>
                 <td>Data</td>
                 <td>Contractats</td>

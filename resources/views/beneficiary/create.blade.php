@@ -4,7 +4,7 @@
 
 <div class="row">
         <div class="col-sm-8 offset-sm-2">
-                <h1 class="display-3">Add a Beneficiary</h1>
+                <h1 class="display-3">Afegir un candidat</h1>
                 <div>
                   @if ($errors->any())
                     <div class="alert alert-danger">
@@ -16,18 +16,22 @@
                     </div><br />
                     @endif
 
-
-
-    <h1>Esto es el formulario de beneficiaries</h1>
     <form method="post" action="{{route('beneficiary.store')}}">
     @csrf
-    <div class="form-group"><label for="name">Name</label><input class="form-control" type="text" name="name"></div>
-    <div class="form-group"><label for="surname">Surname</label><input class="form-control" type="text" name="surname"></div>
-    <div class="form-group"><label for="dni">Dni</label><input class="form-control" type="char" name="dni"></div>
-    <div class="form-group"><label for="birthday">birthday</label><input class="form-control" type="date" name="birthday"></div>
-    <div class="form-group"><label for="adress">adress</label><input class="form-control" type="text" name="adress"></div>
-    <div class="form-group"><label for="phone">phone</label><input class="form-control" type="integer" name="phone"></div>
-    <div class="form-group"><label for="email">email</label><input class="form-control" type="text" name="email"></div>
-    <button type="submit" class="btn btn-primary-outline">Add beneficiary</button>
+    <div class="form-group"><label for="name">Nom</label><input class="form-control" type="text"            name="name">
+    </div>
+    <div class="form-group"><label for="surname">Cognoms</label><input class="form-control" type="text"     name="surname">
+    </div>
+    <div class="form-group"><label for="dni">DNI</label><input class="form-control" type="char"             name="dni">
+    </div>
+    <div class="form-group"><label for="birthday">Aniversari</label><input class="form-control" type="date"   name="birthday">
+    </div>
+    <div class="form-group"><label for="adress">Adreça</label><input class="form-control" type="text"       name="adress">
+    </div>
+    <div class="form-group"><label for="phone">Telèfon</label><input class="form-control" type="integer"      name="phone">
+    </div>
+    <div class="form-group"><label for="email">Email</label><input class="form-control" type="text"         name="email">
+    </div>
+    <button type="submit" class="btn btn-primary-outline">Afegir candidat</button>
     </form>
 @endsection
