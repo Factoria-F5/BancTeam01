@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+        <span><img src="http://www.amigaett.org/wp-content/themes/amiga_ett/lib/img/amiga_ett_social2.png" class="float-right" alt="logo"></span>
         @yield('main')
     </div>
     <script src="{{ asset('js/app.js') }}" type="text/js"></script>
