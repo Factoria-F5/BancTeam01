@@ -15,7 +15,7 @@ class OfferController extends Controller
     public function index()
     {
         $offers=Offer::all();
-        return view('offer.index',compact('offers'));
+        return response()->json($offers);
     }
 
     /**
@@ -58,7 +58,7 @@ class OfferController extends Controller
      */
     public function show(Offer $offer)
     {
-        //
+        return response()->json($offer);
     }
 
     /**
