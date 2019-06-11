@@ -15,7 +15,17 @@ class OfferController extends Controller
     public function index()
     {
         //
-        
+        echo
+            '<table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                </tr>
+                <tr>
+                    <td>Mesa</td>
+                    <td>5</td>
+                </tr>
+            </table>';
     }
 
     /**
@@ -47,11 +57,7 @@ class OfferController extends Controller
      */
     public function show(Offer $offer)
     {
-        echo
-        '<table>
-            <tr>
-                <th>
-        </table>';
+        
     }
 
     /**
