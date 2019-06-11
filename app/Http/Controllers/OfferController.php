@@ -15,6 +15,7 @@ class OfferController extends Controller
     public function index()
     {
         //
+        
     }
 
     /**
@@ -46,7 +47,11 @@ class OfferController extends Controller
      */
     public function show(Offer $offer)
     {
-        //
+        echo
+        '<table>
+            <tr>
+                <th>
+        </table>';
     }
 
     /**
