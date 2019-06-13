@@ -32,7 +32,7 @@ class OfferController extends Controller
 
         $offers=Offer::all();
 
-        return response()->json($offers);
+        return view('offer.index',compact('offers'));
 
     }
 
