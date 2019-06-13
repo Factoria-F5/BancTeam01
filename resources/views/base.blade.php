@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid">
         <div class="logo">
-        <span><img src="http://www.amigaett.org/wp-content/themes/amiga_ett/lib/img/amiga_ett_social2.png" class="float-left" alt="logo"></span>
+        <span><img src="http://www.bancderecursos.org/wp-content/uploads/icona_logo.png" width="300px" class="float-left" alt="logo"></span>
         </div>
         
         @yield('main')
